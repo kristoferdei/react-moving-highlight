@@ -1,5 +1,7 @@
 import { FunctionComponent, useState, useRef, MouseEvent } from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
 
 const Box = styled.div`
   padding: 12px;
@@ -39,6 +41,7 @@ const MovingHighlight: FunctionComponent = () => {
 
   return (
     <Box style={{ background: bgColor }} ref={boxRef} onMouseMove={(e: MouseEvent<HTMLDivElement>) => onMouseMoveHandler(e)} onMouseLeave={onMouseLeaveHandler}>
+      <FontAwesomeIcon icon={faReact} size="6x" />
       <h1>Moving highlight</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
