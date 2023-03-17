@@ -2,17 +2,23 @@ import React from 'react'
 import MovingHighlight from './components/MovingHighlight'
 import styled from 'styled-components'
 
-const StyledDiv = styled.div`
+const AppContainer = styled.div`
+  min-height: 100vh;
   background: black;
-  height: 100vh;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  gap: 1.25rem;
+  padding: 1.25rem;
 `
 
-function App() {
+const App = () => {
   return (
-    <StyledDiv>
+    <AppContainer>
       <MovingHighlight />
-    </StyledDiv>
+      <MovingHighlight />
+      <MovingHighlight />
+      <MovingHighlight />
+    </AppContainer>
   )
 }
 
