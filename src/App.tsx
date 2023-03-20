@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const AppContainer = styled.div`
   min-height: 100vh;
-  background: black;
+  background: rgb(0, 0, 0);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
   gap: 1.25rem;
